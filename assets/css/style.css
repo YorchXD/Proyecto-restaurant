@@ -79,7 +79,7 @@ footer p{
     padding:6%;
 }
 
-.carousel-item img {
+.carousel-item > img {
     height: 600px;
 }
 
@@ -218,11 +218,13 @@ footer p{
 }
 
 
-#image-modal{
+#image-modal, #image-modal-2{
     position: fixed;
     top: 10%;
     width: 100%;
     z-index: 1050;
+    color: white !important;
+    text-align: center;
 }
 
 #card-modal {
@@ -236,15 +238,27 @@ footer p{
     object-fit: cover;
 } 
 
-#image-modal{
-    color: white !important;
-    text-align: center;
-}
 
-#close-modal{
+#close-modal, #close-modal-2{
     width: 40px;
     height: 40px;
     margin: 5px;
     position: relative;
 }
 
+#img-carousel-1, #img-carousel-2{
+    height: auto;
+    width: 65%;
+    padding-bottom: 20px;
+}
+
+.carousel-caption-personalized {
+    position: static;
+    padding-left: 5%;
+    bottom: 1.25rem;
+    padding-right: 5%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}

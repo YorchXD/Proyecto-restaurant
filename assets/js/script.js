@@ -8,6 +8,12 @@ function verFormReserva() {
     $('#reserva').show()
 }
 
+function verSobreNosotros()
+{
+    $('#image-modal-2').show()
+    $('#image-modal').hide();
+}
+
 /*-------------Validacion formulario comuniquemonos-------------*/
 
 $('#comuniquemonos').on('submit',function (event) {
@@ -114,6 +120,7 @@ $('#bebidas').click(function() {
     $('#image-modal-title').text(titulo);
     $('#image-modal-text').text(texto);
     $('#image-modal').show();
+    $('#image-modal-2').hide()
   });
 
 $('#tablas').click(function() {
@@ -124,6 +131,7 @@ $('#tablas').click(function() {
     $('#image-modal-title').text(titulo);
     $('#image-modal-text').text(texto);
     $('#image-modal').show();
+    $('#image-modal-2').hide()
   });
 
 $('#shop').click(function() {
@@ -134,12 +142,18 @@ $('#shop').click(function() {
     $('#image-modal-title').text(titulo);
     $('#image-modal-text').text(texto);
     $('#image-modal').show();
+    $('#image-modal-2').hide()
   });
 
   $('#close-modal').click(function() {
     $('#image-modal').hide();
   });
 
+  $('#close-modal-2').click(function() {
+    $('#image-modal-2').hide();
+  });
+
   $(document).ready(function() {
     $('#image-modal').hide();
+    $('#image-modal-2').hide();
   });

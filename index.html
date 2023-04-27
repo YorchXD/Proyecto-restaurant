@@ -29,7 +29,7 @@
                                 <a class="nav-link active" href="#">Nuestros productos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Sobre nosotros</a>
+                                <a class="nav-link" onclick="verSobreNosotros()">Sobre nosotros</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#comuniquemonos"
@@ -287,6 +287,55 @@
                     </p>
                     <img id="image-modal-content" src="" class="card-img-top" alt="..." />
                 </div>
+            </div>
+        </div>
+
+        <div id="image-modal-2" class="col-12">
+            <div id="card-modal" class="card bg-dark">
+                <button id="close-modal-2" type="button" class="btn btn-danger" aria-label="Close">
+                    x
+                </button>
+                <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img id="img-carousel-1" src="assets/images/IMG2.jpg" class="rounded mx-auto d-block img-fluid" alt="...">
+                        <div class="carousel-caption-personalized d-md-block">
+                          <h5>Nimrodel Pub Restaurantl</h5>
+                          <p>“Nimrodel Significa “dama de la cueva blanca”. Fue una elfa silvana que vivió
+                            durante la Tercera Edad del Sol en el bosque de Lothlórien. En honor a su nombre, se acuña
+                            Nimrodel al río que nace en las Montañas Nubladas</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="20000">
+                        <div class="carousel-caption-personalized d-md-block">
+                          <p>Nimrodel Pub Restaurant es un oasis de calma y diversión, lleno de rincones acogedores
+                            en donde se resalta la belleza de su decoración élfica.
+                            Es un lugar ideal para visitar solo o acompañado, disfrutar una tarde con amigos, terminar
+                            el día después del trabajo o almorzar con tu familia.
+                            Puedes probar nuestras tradicionales tablas, en todas sus variedades y que nos han
+                            otorgado reconocimiento dentro de la cultura gastronómica.
+                            También puedes disfrutar nuestras cervezas de fabricación propia, con sabores que te
+                            llevarán a un mágico mundo.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img id="img-carousel-2" src="assets/images/IMG1.jpg" class="rounded mx-auto d-block img-fluid" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </div>
         </div>
 
