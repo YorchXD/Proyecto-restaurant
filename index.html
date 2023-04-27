@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>NIMRODEL Pub Restaurant</title>
+        <link rel="icon" href="assets/images/n.ico" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/n.png" alt="" width="30" height="24"
+                            class="d-inline-block align-text-top" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Nuestros productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#comuniquemonos"
+                                    onclick="verFormComuniquemonos()">Comuniquemonos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#reserva" onclick="verFormReserva()">Reserva</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <h1 id="title">Nimrodel Pub Restaurant</h1>
+
+        <h4 class="under">Destacados de la semana</h4>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 mb-md-3 mb-sm-3">
+                    <div class="card">
+                        <img id="bebidas" src="assets/images/bebidas.jpg" class="card-img-top" alt="gaseosas" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title" id="titulo-gaseosa">GASEOSAS</h5>
+                            <p class="card-text" id="texto-gaseosa">
+                                Lorem ipsum, andae optio ea explicabo non voluptatum eaque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 mb-md-3 mb-sm-3">
+                    <div class="card">
+                        <img id="tablas" src="assets/images/tablas.jpg" class="card-img-top" alt="tablas" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title" id="titulo-tablas">TABLAS</h5>
+                            <p class="card-text" id="texto-tablas">
+                                Lorem ipsum, andae optio ea explicabo non voluptatum eaque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 mb-md-3 mb-sm-3">
+                    <div class="card">
+                        <img id="shop" src="assets/images/shop.jpeg" class="card-img-top" alt="cervezas" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title" id="titulo-shop">SHOP CERVESA</h5>
+                            <p class="card-text" id="texto-shop">
+                                Lorem ipsum, andae optio ea explicabo non voluptatum eaque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pt-2 ps-5 pe-5 pb-2">
+            <div class="row p-5">
+                <form id="comuniquemonos" action="#" class="row g-3 needs-validation p-3 text-white bg-dark text-center"
+                    novalidate>
+                    <h3>Comuniquemonos</h3>
+                    <div class="col-md-12">
+                        <label for="nombreCom" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombreCom" placeholder="María Vargas" required>
+                        <div class="valid-feedback">
+                            Listo
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor ingrese el nombre
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="correoCom" class="form-label">Correo</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text">@</span>
+                            <input type="text" class="form-control" id="correoCom" placeholder="mariavargas@correo.com"
+                                aria-describedby="inputGroupPrepend" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required>
+                            <div class="valid-feedback">
+                                Listo
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor ingrese el correo
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="telefonoCom" class="form-label">Telefono</label>
+                        <input type="text" class="form-control" id="telefonoCom" pattern="\x2b[0-9]{11}$"
+                            placeholder="+56951234564" required>
+                        <div class="valid-feedback">
+                            Listo
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor ingrese el telefono
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="motivoCom" class="form-label">Motivo</label>
+                        <select class="form-select" id="motivoCom" required>
+                            <option value="" selected disabled>Seleccione el motivo</option>
+                            <option value="Felicitaciones">Felicitaciones</option>
+                            <option value="Reclamos">Reclamos</option>
+                            <option value="Consultas">Consultas</option>
+                            <option value="Sugerencias">Sugerencias</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Por favor seleccione un motivo
+                        </div>
+                        <div class="valid-feedback">
+                            Listo
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 ps-5 pe-5">
+                        <textarea class="form-control" id="descripcionMotivoCom" placeholder="Describa el motivo" required
+                            rows="10"></textarea>
+                        <div class="invalid-feedback">
+                            Describa el motivo
+                        </div>
+                        <div class="valid-feedback">
+                            Listo
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="container ps-5 pb-5 pe-5">
+            <div class="row p-5">
+                <form id="reserva" action="#" class="row g-3 needs-validation p-3 text-white bg-dark text-center"
+                    novalidate>
+                    <h3>Reserva</h3>
+                    <div class="col-md-12">
+                        <label for="nombreReserva" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombreReserva" placeholder="María Vargas" required>
+                        <div class="valid-feedback">
+                            Listo
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor ingrese el nombre
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="correoReserva" class="form-label">Correo</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="text" class="form-control" id="correoReserva" placeholder="mariavargas@correo.com"
+                                aria-describedby="inputGroupPrepend" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required>
+                            <div class="valid-feedback">
+                                Listo
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor ingrese el correo
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="telefonoReserva" class="form-label">Telefono</label>
+                        <input type="text" class="form-control" id="telefonoReserva" pattern="\x2b[0-9]{11}$"
+                            placeholder="+56951234564" required>
+                        <div class="valid-feedback">
+                            Listo
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor ingrese el telefono
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="fechaReserva" class="form-label">Fecha</label>
+                        <input type="date" class="form-control" id="fechaReserva" required>
+                        <div class="valid-feedback">
+                            Listo
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor seleccione la fecha
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="horaReserva" class="form-label">Hora</label>
+                        <input type="time" min="09:00" max="18:00" class="form-control" id="horaReserva" required>
+                        <small class="form-text text-muted">Seleccione una hora entre las 09:00 hasta las 18:00.</small>
+                        <div class="valid-feedback">
+                            Listo
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor seleccione la hora
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="asistentesReserva" class="form-label">Cantidad de asistentes</label>
+                        <input type="number" class="form-control" id="asistentesReserva" min="1" required>
+                        <div class="valid-feedback">
+                            Listo
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor ingrese la cantidad de asistentes
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Reservar</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/vino.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/mojito.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/chorillana.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <footer>
+            <p>Todos los derechos reservados <i class="far fa-registered"></i></p>
+        </footer>
+
+        <div id="image-modal" class="col-12">
+            <div id="card-modal" class="card bg-dark">
+                <button id="close-modal" type="button" class="btn btn-danger" aria-label="Close">
+                    x
+                </button>
+                <div class="card-body text-center">
+                    <h5 class="card-title" id="image-modal-title"></h5>
+                    <p class="card-text" id="image-modal-text">
+                    </p>
+                    <img id="image-modal-content" src="" class="card-img-top" alt="..." />
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+    </body>
+</html>

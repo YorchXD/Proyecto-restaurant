@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+  
+nav{
+    width: 100%;
+}
+
+nav>ul>li{
+    display: inline-block;
+    padding-right: 3%;
+    color: #9a9a9a;
+}
+
+a{
+    text-decoration: none;
+    color: #9a9a9a;
+}
+
+#logo {
+    width: 6%;
+}
+
+header{
+    background-image: url("../images/fondo.jpg");
+    /* background-size: 500px; */
+}
+
+#title {
+    text-align: center;
+    color: #7D7B80;
+    font-size: 4em;
+    padding: 20px 0 20px 0;
+}
+
+
+h4.under {
+    text-align: center;
+    text-decoration:  overline;
+}
+
+.card-img-top, #image-modal-content {
+    width: 100%;
+    height: 266px;
+    object-fit: cover;
+} 
+
+#comuniquemonos, #reserva{
+    width: 100%;
+    text-align:center;
+    margin: 10px 0 10px 0;
+}
+
+h3{
+    text-align: center;
+}
+
+.input-form{
+    display: flex;
+    padding: 10px;
+}
+
+footer{
+    background-image: url("../images/fondo.jpg");
+    padding:6%;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer p{
+    color: white;
+    font-weight: bold;
+    padding:6%;
+}
+
+.carousel-item img {
+    height: 600px;
+}
+
+
+/*
+    Pantalla Extra Large (>=1200px)
+*/
+@media(min-width:1200px){
+    .col-xl-12{width: 100%;}
+    .col-xl-11{width: 91.66666667%;}
+    .col-xl-10{width: 83.33333334%;}
+    .col-xl-9{width: 75%;}
+    .col-xl-8{width: 66.66666667%;}
+    .col-xl-7{width: 58.33333334%;}
+    .col-xl-6{width: 50%;}
+    .col-xl-5{width: 41.66666667%;}
+    .col-xl-4{width: 33.33333334%;}
+    .col-xl-3{width: 25%;}
+    .col-xl-2{width: 16.66666667%;}
+    .col-xl-1{width: 8.33333333%;}
+}
+
+@media(min-width:1200px){
+    .collapse.navbar-collapse{
+        justify-content: center;
+    }
+        
+    .container-form{
+        width: 50%;
+    }
+
+    #card-modal {
+        margin: 0 30% 0% 30%;
+    }
+}
+
+/*
+    Pantalla Large (>=992px)
+*/
+@media(min-width:992px) and (max-width:1199px){
+    .col-lg-12{width: 100%;}
+    .col-lg-11{width: 91.66666667%;}
+    .col-lg-10{width: 83.33333334%;}
+    .col-lg-9{width: 75%;}
+    .col-lg-8{width: 66.66666667%;}
+    .col-lg-7{width: 58.33333334%;}
+    .col-lg-6{width: 50%;}
+    .col-lg-5{width: 41.66666667%;}
+    .col-lg-4{width: 33.33333334%;}
+    .col-lg-3{width: 25%;}
+    .col-lg-2{width: 16.66666667%;}
+    .col-lg-1{width: 8.33333333%;}
+}
+
+@media(max-width:1199px){
+    .collapse.navbar-collapse{
+        justify-content: right;
+    }
+        
+    .container-form{
+        width: 70%;
+    }
+
+    #card-modal {
+        margin: 0 20% 0% 20%;
+    }
+}
+
+/*
+   Pantalla Medium (>=768px)
+*/
+@media(min-width:768px) and (max-width:991px){
+    .col-md-12{width: 100%;}
+    .col-md-11{width: 91.66666667%;}
+    .col-md-10{width: 83.33333334%;}
+    .col-md-9{width: 75%;}
+    .col-md-8{width: 66.66666667%;}
+    .col-md-7{width: 58.33333334%;}
+    .col-md-6{width: 50%;}
+    .col-md-5{width: 41.66666667%;}
+    .col-md-4{width: 33.33333334%;}
+    .col-md-3{width: 25%;}
+    .col-md-2{width: 16.66666667%;}
+    .col-md-1{width: 8.33333333%;}
+    #card-modal {
+        margin: 0 20% 0% 20%;
+    }
+}
+
+@media(max-width:991px){
+    #comuniquemonos, #reserva{
+        display: none;
+    }
+}
+
+/*
+    Pantalla LSmall (>=576px)
+*/
+@media(min-width:576px) and (max-width:767px){
+    .col-sm-12{width: 100%;}
+    .col-sm-11{width: 91.66666667%;}
+    .col-sm-10{width: 83.33333334%;}
+    .col-sm-9{width: 75%;}
+    .col-sm-8{width: 66.66666667%;}
+    .col-sm-7{width: 58.33333334%;}
+    .col-sm-6{width: 50%;}
+    .col-sm-5{width: 41.66666667%;}
+    .col-sm-4{width: 33.33333334%;}
+    .col-sm-3{width: 25%;}
+    .col-sm-2{width: 16.66666667%;}
+    .col-sm-1{width: 8.33333333%;}
+    #card-modal {
+        margin: 0 5% 0% 5%;
+    }
+}
+/*
+    Pantalla Extra small (<576px)
+*/
+@media(max-width:575px){
+    .col-xs-12{width: 100%;}
+    .col-xs-11{width: 91.66666667%;}
+    .col-xs-10{width: 83.33333334%;}
+    .col-xs-9{width: 75%;}
+    .col-xs-8{width: 66.66666667%;}
+    .col-xs-7{width: 58.33333334%;}
+    .col-xs-6{width: 50%;}
+    .col-xs-5{width: 41.66666667%;}
+    .col-xs-4{width: 33.33333334%;}
+    .col-xs-3{width: 25%;}
+    .col-xs-2{width: 16.66666667%;}
+    .col-xs-1{width: 8.33333333%;}
+
+    #card-modal {
+        margin: 0 5% 0% 5%;
+    }
+}
+
+
+#image-modal{
+    position: fixed;
+    top: 10%;
+    width: 100%;
+    z-index: 1050;
+}
+
+#card-modal {
+    position: relative;
+    width: auto;
+  }
+
+ #image-modal-content {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+} 
+
+#image-modal{
+    color: white !important;
+    text-align: center;
+}
+
+#close-modal{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    position: relative;
+}
+
